@@ -112,7 +112,7 @@ MDIN
 
 Obtain image features using CLIP and project them to point. (Please modify the output of the original CLIP's visual encoder to obtain 'tokens'. See line 79 in image2point_clip.py for more imformation.)
 
-If you haven't processed the '.sen' files or find this step too time-consuming, you can download our preprocessed features and unzip them into the 'clip-feat' folder. Click [here]() to download.
+If you haven't processed the '.sen' files or find this step too time-consuming, you can download our preprocessed features and unzip them into the 'clip-feat' folder. Click [here](https://drive.google.com/drive/folders/1WD0AlPBAxwb8zpmTeuXphRw9wrpNafUG?usp=sharing) to download.
 
 ```
 cd ..
@@ -122,7 +122,7 @@ python image2point_clip.py
 ### ScanRefer dataset
 Download [ScanRefer](https://github.com/daveredrum/ScanRefer) annotations following the instructions.
 
-In the original ScanRefer annotations, all `ann_id` within each scene were individually assigned based on the corresponding `object_id`, resulting in duplicate `ann_id`. We have modified the ScanRefer annotations, and the revised annotation data, where each `ann_id` within a scene is unique, can be accessed [here]().
+In the original ScanRefer annotations, all `ann_id` within each scene were individually assigned based on the corresponding `object_id`, resulting in duplicate `ann_id`. We have modified the ScanRefer annotations, and the revised annotation data, where each `ann_id` within a scene is unique, can be accessed [here](https://drive.google.com/drive/folders/1WD0AlPBAxwb8zpmTeuXphRw9wrpNafUG?usp=sharing).
 
 Put the downloaded `ScanRefer` folder as follows.
 ```
@@ -144,11 +144,11 @@ MDIN
 │   │   ├── multi3drefer_train.json
 │   │   ├── multi3drefer_val.json
 ```
-There are some typos in the original text, please correct them to prevent syntax parsing errors. Or download the modified [`Multi3DRefer(New)`]()
+There are some typos in the original text, please correct them to prevent syntax parsing errors. Or download the modified [`Multi3DRefer(New)`](https://drive.google.com/drive/folders/1WD0AlPBAxwb8zpmTeuXphRw9wrpNafUG?usp=sharing)
 
 ## Pretrained Backbone
 
-Download [SPFormer]() pretrained model and move it to backbones.
+Download [SPFormer](https://drive.google.com/drive/folders/1WD0AlPBAxwb8zpmTeuXphRw9wrpNafUG?usp=sharing) pretrained model and move it to backbones.
 ```
 mkdir backbones
 mv ${Download_PATH}/sp_unet_backbone.pth backbones/
@@ -186,8 +186,8 @@ If you find this work useful in your research, please cite:
 Download pretrain models and move it to checkpoints.
 |Benchmark | Task  | mIoU | Acc@0.25 | Acc@0.5 | Model |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| Multi3DRes | 3D-GRES | 51.7 | 71.5 | 50.0 | [Model]() |
-| ScanRefer   | 3D-RES | 50.2 | 60.6 | 54.9 | [Model]() |
+| Multi3DRes | 3D-GRES | 51.7 | 71.5 | 50.0 | [Model](https://drive.google.com/drive/folders/1WD0AlPBAxwb8zpmTeuXphRw9wrpNafUG?usp=sharing) |
+| ScanRefer   | 3D-RES | 50.2 | 60.6 | 54.9 | [Model](https://drive.google.com/drive/folders/1WD0AlPBAxwb8zpmTeuXphRw9wrpNafUG?usp=sharing) |
 
 ## Ancknowledgement
 
