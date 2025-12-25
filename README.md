@@ -101,7 +101,7 @@ bash prepare_data.sh
 The script data into train/val folder and preprocess the data. After running the script the scannet dataset structure should look like below.
 
 ```
-MDIN
+IPDN
 ├── data
 │   ├── scannetv2
 │   │   ├── scans
